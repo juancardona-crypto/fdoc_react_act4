@@ -13,15 +13,15 @@ export default function EventList() {
   return (
     <>
         {events.map((event) => (
+          
             <div
-            key={events.id}
-            className="bg-white shadow-md rounded-lg p-4 mb-4 flex justify-between items-center"
-          >
-            <div>
-              <h2 className="text-xl text-black font-semibold">{event.title}</h2>
-              <p className="text-blue-600">Categoría: {event.category}</p>
-            </div>
-            <p className="text-lg font-bold text-green-600">${event.price}</p>
+              key={events.id}
+              className="bg-white shadow-md rounded-lg p-4 mb-4 flex justify-between items-center">
+              <div>
+                <h2 className="text-xl text-black font-semibold">{event.title}</h2>
+                <p className="text-blue-600">Categoría: {event.category}</p>
+              </div>
+              <p className="text-lg font-bold text-green-600">${event.price}</p>
           </div>
         ))}
     </>
